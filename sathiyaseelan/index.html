@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+        <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+  
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	<title>Zhagaram SathiyaSeelan</title>
+	<link rel="icon" href="images/100_percent_original.png" type="image/x-icon" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Shadows+Into Light&amp;display=swap" media="all" id="shr-font-shadows-into light">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+	crossorigin="anonymous">
+	<script async defer crossorigin="anonymous" src="connect.facebook.net/en_US/sdk.js#xfbml=1&version=v5.0"></script>
+	   <link href="baguetteBox.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+	<link href="style2.css" rel="stylesheet">
+        <link rel="manifest" id="manifest-placeholder">
+        <script>
+            var dynamicManifest = {
+                "name": "Zhagaramsathiyaseelan",
+                "short_name": "Zhagaramsathiyaseelan",
+                "description": "Zhagaramsathiyaseelan",
+                "start_url": "https://reachmeout.me/sathiyaseelan/index.html",
+                "background_color": "#000000",
+                "theme_color": "#0f4a73",
+                "icons": [{
+                    "src": "https://reachmeout.me/assets/img/reachmeoutlogo.png",
+                    "sizes": "310x69",
+                    "type": "image/png"
+                }],
+                "display": "standalone"
+            }
+          const stringManifest = JSON.stringify(dynamicManifest);
+          const blob = new Blob([stringManifest], {type: 'application/json'});
+          const manifestURL = URL.createObjectURL(blob);
+          document.querySelector('#manifest-placeholder').setAttribute('href', manifestURL);
+        </script>
+        <script>
+            function ColorLuminance(hex, lum) {
+                // validate hex string
+                hex = String(hex).replace(/[^0-9a-f]/gi, '');
+                if (hex.length < 6) {
+                    hex = hex[0]+hex[0]+hex[1]+hex[1]+hex[2]+hex[2];
+                }
+                lum = lum || 0;
+
+                // convert to decimal and change luminosity
+                var rgb = "#", c, i;
+                for (i = 0; i < 3; i++) {
+                    c = parseInt(hex.substr(i*2,2), 16);
+                    c = Math.round(Math.min(Math.max(0, c + (c * lum)), 255)).toString(16);
+                    rgb += ("00"+c).substr(c.length);
+                }
+
+                return rgb;
+            }
+            document.documentElement.style.setProperty('--theme-color', '#F5B343');
+            document.documentElement.style.setProperty('--theme-color-light', '#F5B34326');
+            document.documentElement.style.setProperty('--theme-color-100', '#F5B343');
+            document.documentElement.style.setProperty('--theme-color-75', '#F5B34390');
+            document.documentElement.style.setProperty('--theme-color-50', '#F5B34380');
+            document.documentElement.style.setProperty('--theme-color-25', '#F5B34370');
+        </script>
+    </head>
+    <body>
+        <div class="page-wrapper" id="home-section">
+            <div class="separator"></div>
+            <div class="views-label"><i class="fas fa-eye"></i> Views: <b><span id="CounterVisitor">0</span></b></div>
+            <div class="upper">
+                <!-- User Profile Pic -->
+                <img src="images/logss.jpg" class="profile-pic-img">
+                <!-- User Company Name -->
+                <!--div class="firmname">ZHAGARAM</div>
+                <div class="firmname-underline"></div-->
+                <!-- User First Name and Last Name -->
+                <div class="name">SATHIYASEELAN . J<span style="margin-top: 5px;display: block"><i style="font-size: 16px;font-weight:700;">MARKETING EXECUTIVE</i></span></div>
+                
+                <div class="contact-buttons">
+                    <a class="contact-button" href="tel:7868055827">
+                        <i class="fas fa-phone fa-flip-horizontal"></i>
+                        <!-- Call -->
+                    </a>
+                    <a class="contact-button" target="_blank" href="https://wa.me/917868055827?text=Got%20reference%20from%20your%20Reachmeout%20Card.%20Want%20to%20know%20more%20about%20our%20products%20and%20services.">
+                        <i class="fab fa-whatsapp"></i>
+                        <!-- Whatsapp -->
+                    </a>
+                    <a class="contact-button" target="_blank" href="https://goo.gl/maps/6tTtKiFMBcTnQdQJ9">
+                        <i class="fas fa-map-marker-alt fa-flip-horizontal"></i>
+                        <!-- Direction -->
+                    </a>
+                    <a class="contact-button" target="_blank" href="mailto:sathiya.jayaraman@zhagaramss.com">
+                        <i class="fas fa-envelope fa-flip-horizontal"></i>
+                        <!-- Mail -->
+                    </a>
+                </div>
+            </div>
+            <div class="lower">
+                <div class="contact-info-container">
+                    <div class="contact-info-wrapper">
+                        <a class="contact-piller-button call" target="_blank" href="tel:7868055827"> 
+                            <i class="fas fa-phone fa-flip-horizontal"></i>
+                        </a>
+                        <div class="contact-info">
+                            <div style="margin-bottom: 5px;"><a target="_blank" href="tel:7868055827">+91 78680 55827</a></div>
+                           
+                        </div>
+                    </div>
+                    <div class="contact-info-wrapper">
+                        <a class="contact-piller-button" target="_blank" href="https://reachmeout.me/">
+                            <i class="fas fa-globe"></i>
+                        </a>
+                        <div class="contact-info">
+                            <a target="_blank" href="https://reachmeout.me/">www.reachmeout.me</a>
+                        </div>
+                    </div>
+                    <div class="contact-info-wrapper">
+                        <a class="contact-piller-button" target="_blank" href="mailto:sathiya.jayaraman@zhagaramss.com">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <div class="contact-info">
+                            <a target="_blank" href="mailto:sathiya.jayaraman@zhagaramss.com">sathiya.jayaraman@zhagaramss.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-info-wrapper">
+                        <a class="contact-piller-button" target="_blank" href="https://goo.gl/maps/6tTtKiFMBcTnQdQJ9">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </a>
+                        <div class="contact-info">
+                            <a target="_blank" href="https://goo.gl/maps/6tTtKiFMBcTnQdQJ9">No.5,Railway Station Road, <br>Opposite to Govt Boys Hr.Sec School,<br>Ranipet, Tamil Nadu 632401 </a>
+                        </div>
+						
+						
+                    </div>
+                </div>
+                <div style="padding: 15px;">
+                    <div class="p-20"></div>
+					
+                    <div class="whatsapp-input">
+                        <div class="input-wrapper">
+                        <label>+91</label>
+                        <input id="whatsapp-input" class="input" placeholder="Mobile Number" maxlength="10" oninput="this.value=this.value.replace(/[^0-9]/g,'');"/>
+                    </div>
+                        <a class="whatsapp-button"
+                        target="_blank"
+                        href="javascript:;"
+                        onclick="handleWhatsappShare(this)">
+                        <i class="fab fa-whatsapp"></i>Share on Whatsapp
+                    </a>
+                    </div> 
+					
+                    <div class="p-20"></div>
+				
+                    <div class="shadow-buttons">
+                        <a class="shadow-button" href="images/SathiyaSeelan.vcf" download><i class="fas fa-download shadow-button-icon"></i>Add to Phone Book</a>
+                    <a class="shadow-button" onclick="openShareModal(this, `Zhagaramsathiyaseelan`)"><i class="fas fa-share-alt shadow-button-icon"></i>Share</a>
+                    </div>
+                    <div>
+						<!--a class="shadow-button save-card-button" target="_blank" href="images/santhoshcard.jpg" download ><i class="fas fa-download shadow-button-icon"></i>Save Card</a-->
+                    </div>
+                    <div class="p-30"></div>
+					
+                    <ul class="inprofile share-buttons">
+                        <li class="share-button">
+                                <a target="_blank" href="https://www.facebook.com/Reach-Me-Out-105969064902899"><i class="share-button-facebook fab fa-facebook-f"></i></a>
+                            </li>
+                        <li class="share-button">
+                                <a target="_blank" href="https://twitter.com/Reachmeout1" ><i class="share-button-twitter fab fa-twitter"></i></a>
+                            </li>
+                        <li class="share-button">
+                                <a target="_blank" href="https://www.instagram.com/reachmeoutt/"><i class="share-button-instagram fab fa-instagram"></i></a>
+                            </li>
+                        <li class="share-button">
+                                <a target="_blank" href="https://www.youtube.com/channel/UC-ikgah1777Fl2CZ0Y1VRFg"><i class="share-button-pinterest fab fa-youtube"></i></a>
+                            </li>
+                      </ul>
+                    <div class="p-20"></div>
+                </div>
+                <div class="bottom-separator"></div>
+            </div>
+        </div>
+        
+        <div class="section-container" id="about-us-section">
+            <div class="separator"></div>
+            <div class="section-content-wrapper">
+                <h2 class="section-header">About Us</h2>
+                <div class="section-header-underline"></div>
+				
+				<div class="profile-piclogo-img">
+					<img src="images/Logo3.png" alt="">									
+				</div>
+                <table class="about-us-table">
+                    <tbody>
+                        <tr>
+                            <td class="table-row-label">
+                                <h3 class="table-row-label-text">Company Name</h3><b class="table-row-label-separator">:</b>
+                            <td>
+                            <td class="table-row-value">
+                                Zhagaram Software Solution
+                            <td>
+                        </tr>
+                        <tr>
+                                <td class="table-row-label">
+                                    <h3 class="table-row-label-text">Nature of Business</h3><b class="table-row-label-separator">:</b>
+                                <td>
+                                <td class="table-row-value">
+                                    Software Services & Solutions
+                                <td>
+                            </tr>
+                    </tbody>
+                </table>
+                
+                <h3 class="speciality-label">Who we are</h3>
+                <div class="about-us-text">
+					<p>	
+						Zhagaram Software Solutions Pvt Ltd has been established as an Information Technology Company in Chennai, India. Our traditional business model is providing end-to-end development and support services for Web Development, Mobile Development, eCommerce Development and Custom software development for various markets across the Globe. Based on the decision of the company to diversify our properties, we have also extended our services to other software related services and solutions. 					
+					</p>
+				<h3 class="speciality-label">Purpose</h3>	
+					<p>
+					To be a leader in the Information Technology industry by providing enhanced services, relationship and profitability.					
+					</p>
+				
+				</div>
+            </div>
+            <div class="bottom-separator"></div>
+        </div>
+        <div class="section-container" id="products-services-section">
+                <div class="separator"></div>
+                <div class="section-content-wrapper">
+                    <h2 class="section-header">Our Services</h2>
+                    <div class="section-header-underline"></div>
+                    <div>
+                      <div class="card">
+						<h3 class="card-title">Application Dev & Maintenance</h3>
+                        <p class="product-description">
+							We use the latest and greatest technologies to implement customer solution and the architecture.
+						</p>
+                        <img src="images/maintenance.jpg" alt="">
+                        <div class="product-enquiry-section">
+						<div class="product-price"></div>
+							<a target="_blank" href="https://wa.me/917868055827?text=Got%20reference%20from%20your%20Reachmeout%20Card.%20Want%20to%20know%20more%20about%20our%20products%20and%20services."  class="product-enquiry-btn">Enquiry</a>
+						</div>
+                        </div>
+                        <div class="card">
+						<h3 class="card-title">Web & Digital</h3>
+                        <p class="product-description">
+							We emphasizes the latest trends in web development and the production and distribution of digital media. 
+						</p>
+                        <img  src="images/digital.jpg" alt="">
+                        <div class="product-enquiry-section">
+						<div class="product-price"></div>
+							<a target="_blank" href="https://wa.me/917868055827?text=Got%20reference%20from%20your%20Reachmeout%20Card.%20Want%20to%20know%20more%20about%20our%20products%20and%20services."  class="product-enquiry-btn">Enquiry</a>							
+						</div>
+                        </div>
+                        <div class="card">
+						<h3 class="card-title">Mobility</h3>
+                        <p class="product-description">
+						We build iOS and Android applications for enterprise and start-ups using leading frameworks. We integrate new concepts to stay ahead. 
+						</p>
+                        <img  src="images/mobility.jpg" alt="">
+                        <div class="product-enquiry-section">
+						<div class="product-price"></div>
+							<a target="_blank" href="https://wa.me/917868055827?text=Got%20reference%20from%20your%20Reachmeout%20Card.%20Want%20to%20know%20more%20about%20our%20products%20and%20services."  class="product-enquiry-btn">Enquiry</a>						
+						</div>
+                        </div>
+                        <div class="card">
+							<h3 class="card-title">Cloud & Servers</h3>
+                        <p class="product-description">
+						We manage servers in AWS and Google on all fronts from streaming media to managing data to build scalable solutions. 
+						<p>
+                        <img  src="images/cloud.jpg" alt="">
+                        <div class="product-enquiry-section">
+						<div class="product-price"></div>
+							<a target="_blank" href="https://wa.me/917868055827?text=Got%20reference%20from%20your%20Reachmeout%20Card.%20Want%20to%20know%20more%20about%20our%20products%20and%20services."  class="product-enquiry-btn">Enquiry</a>					
+						</div>
+                        </div>
+                        <div class="card">
+						<h3 class="card-title">Social</h3>
+                        <p class="product-description">Pioneering social media integration for enterprises, internally and externally using industry leading software and enabling content management. 
+						</p>
+                        <img  src="images/social.jpg" alt="">
+                        <div class="product-enquiry-section">
+						<div class="product-price"></div>
+							<a target="_blank" href="https://wa.me/917868055827?text=Got%20reference%20from%20your%20Reachmeout%20Card.%20Want%20to%20know%20more%20about%20our%20products%20and%20services."  class="product-enquiry-btn">Enquiry</a>						
+						</div>
+                        </div>
+						
+						<div class="card">
+						<h3 class="card-title">Analytics</h3>
+                        <p class="product-description"> Consulting in Analytics services in all stages including Acquire, Store, Analyze, Visualize and Interact.
+ 
+						</p>
+                        <img  src="images/analytics.jpg" alt="">
+                        <div class="product-enquiry-section">
+						<div class="product-price"></div>
+							<a target="_blank" href="https://wa.me/917868055827?text=Got%20reference%20from%20your%20Reachmeout%20Card.%20Want%20to%20know%20more%20about%20our%20products%20and%20services."  class="product-enquiry-btn">Enquiry</a>						
+						</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom-separator"></div>
+            </div>
+ 
+        <div class="section-container" id="gallery-section">
+                <div class="separator"></div>
+                <div class="section-content-wrapper">
+                <h2 class="section-header">Gallery</h2>
+                    <div class="section-header-underline"></div>
+                    <div class="images-container">					
+						<div class="tz-gallery">
+						<div class="row">							
+						   <div class="image-wrapper">
+								<a class="lightbox" href="images/gallery02.jpg" alt="">
+									<img src="images/gallery02.jpg" alt="">
+								</a>
+							</div>
+							<div class="image-wrapper">
+								<a class="lightbox" href="images/gallery03.jpg" alt="">
+									<img src="images/gallery03.jpg" alt="">
+								</a>
+							</div>
+							<div class="image-wrapper">
+								<a class="lightbox" href="images/gallery04.jpg" alt="">
+									<img src="images/gallery04.jpg" alt="">
+								</a>
+							</div>
+							<div class="image-wrapper">
+								<a class="lightbox" href="images/gallery05.jpg" alt="">
+									<img src="images/gallery05.jpg" alt="">
+								</a>
+							</div>
+							<div class="image-wrapper">
+								<a class="lightbox" href="images/gallery06.jpg" alt="">
+									<img src="images/gallery06.jpg" alt="">
+								</a>
+							</div>
+							<div class="image-wrapper">
+								<a class="lightbox" href="images/gallery07.jpg" alt="">
+									<img src="images/gallery07.jpg" alt="">
+								</a>
+							</div>
+							<div class="image-wrapper">
+								<a class="lightbox" href="images/gallery08.jpg" alt="">
+									<img src="images/gallery08.jpg" alt="">
+								</a>
+							</div>
+							<div class="image-wrapper">
+								<a class="lightbox" href="images/gallery09.jpg" alt="">
+									<img src="images/gallery09.jpg" alt="">
+								</a>
+							</div>
+							<div class="image-wrapper">
+								<a class="lightbox" href="images/gallery10.jpg" alt="">
+									<img src="images/gallery10.jpg" alt="">
+								</a>
+							</div>
+							
+						</div>
+                </div>	
+                </div>
+                </div>
+                <div class="bottom-separator"></div>
+            </div>
+			
+			<div class="section-container" id="video-section">
+                <div class="separator"></div>
+                <div class="section-content-wrapper">
+                <h2 class="section-header">Video</h2>
+                    <div class="section-header-underline"></div>
+						<div class="row">							
+						  <div class="card" style="padding: 10px">
+                            <iframe src="https://www.youtube.com/embed/U6LKYY5tdk4" frameborder="0" allowfullscreen style="width: 100%"></iframe>
+							</div>
+						</div>
+                </div>
+                <div class="bottom-separator"></div>
+            </div>
+			<div class="section-container" id="enquiry-section">
+                <div class="separator"></div>
+                <div class="section-content-wrapper">
+                <h2 class="section-header">Enquiry Form</h2>
+                    <div class="section-header-underline"></div>
+                    <div class="contact-form"> 
+					<div id="msg" style="display:none;">
+						<div class="notify">
+							Your message has been sent successfully.
+						</div>
+					</div>
+					<form id="contactform" method="post" class="row enquiry-form form-inline" action="EmailForm.php">
+						<fieldset>
+                            <div class="form-group">
+                                <input type="text" name="name" id="enquiryName" placeholder="Full Name" class="form-control">
+                            </div>								
+							<div class="flex" style="display: flex;">
+								<div class="form-group enquiry-phoneNumber">
+                                    <input type="text" name="phone" id="phoneNumber"  placeholder="Phone Number" class="form-control">
+                                </div>
+								<div class="form-group enquiry-email">
+									<input type="text"  name="email" id="email" placeholder="Email" class="form-control">
+								</div>
+                            </div>
+							<div class="form-group">
+                                <textarea class="form-control" rows="5" name="message" id="message" placeholder="Message"></textarea>
+							</div>
+							<div class="form-group text-center">
+                                <input type="submit"  value="Send message" class="submit">
+                            </div>
+                        </fieldset>
+                    </form>
+				</div>
+                </div>
+                <div class="bottom-separator"></div>
+            </div>
+        <div class="copyright-wrapper">
+            <div class="copyright-wrapper-inner">
+                © 2021 <a href="http://www.zhagaramss.com/" target="_blank"><b>zhagaramss.com</b></a>
+            </div>
+        </div>
+        <!-- Footer Menu -->
+        <div class="footer">
+            <ul class="footer-menu">
+                <li>
+                    <a class="footer-menu-link" href="#home-section">
+                        <i class="footer-menu-icon fas fa-home"></i>
+                        <div class="footer-menu-text">HOME</div>
+                    </a>
+                </li>
+                <li>
+                        <a class="footer-menu-link" href="#about-us-section">
+                            <i class="footer-menu-icon fas fa-briefcase"></i>
+                        <div class="footer-menu-text">ABOUT US</div>
+                        </a>
+                    </li>
+                <li>
+                        <a class="footer-menu-link" href="#products-services-section">
+                            <i class="footer-menu-icon fas fa-box-open"></i>
+                        <div class="footer-menu-text">SERVICES</div>
+                        </a>
+                    </li>
+                
+                <li>
+                        <a class="footer-menu-link" href="#gallery-section">
+                            <i class="footer-menu-icon fas fa-file-image"></i>
+                            <div class="footer-menu-text">GALLERY</div>
+                        </a>
+                    </li>
+					
+					 <li>
+                        <a class="footer-menu-link" href="#video-section">
+                            <i class="footer-menu-icon fas fa-file-image"></i>
+                            <div class="footer-menu-text">VIDEO</div>
+                        </a>
+                    </li>
+                
+                <li>
+                        <a class="footer-menu-link" href="#enquiry-section">
+                            <i class="footer-menu-icon fas fa-comment-alt"></i>
+                            <div class="footer-menu-text">ENQUIRY</div>
+                        </a>
+                    </li>
+            </ul>
+        </div>
+        <!-- The image Modal -->
+        <div id="imageModal" class="modal">
+            <span class="close" id="imageModalClose">&times;</span>
+            <img class="modal-content fadeIn" id="img01">
+            <div id="caption"></div>
+        </div>
+        <!-- The share Modal -->
+        <div id="shareModal" class="modal share-modal">
+            <div class="share-form fadeInUpBig">
+                <div class="share-form-header">
+                    <h3 class="share-form-header-text">Share Profile</h3>
+                    <span class="close" id="shareModalClose">&times;</span>
+                </div>
+                <div class="share-form-buttons-container">
+                    <p>Share Zhagaram Sathiya Seelan card in your.</p>
+                    <div class="share-buttons-heading">
+                        <img src="images/tild-arrow.svg" class="share-buttons-arrow">
+                        <div class="share-buttons-heading-text">Share my Card</div>
+                    </div>
+                    <ul class="share-buttons">
+                        <li class="share-button">                            
+							<!--a href="javascript:;" target="_blank" onclick="handleDirectWhatsappShare(this)">
+                                <i class="share-button-whatsapp fab fa-whatsapp"></i>
+                            </a-->
+							
+							<a href="https://wa.me/917868055827?text=Got%20reference%20from%20your%20Reachmeout%20Card.%20Want%20to%20know%20more%20about%20your%20products%20and%20services." target="_blank">
+                                <i class="share-button-whatsapp fab fa-whatsapp"></i>
+                            </a>
+                        </li>
+                        <li class="share-button">
+                            <a target="_blank" href="sms:?body=https://reachmeout.me/">
+                                <i class="share-button-sms fas fa-comment-dots"></i>
+                            </a>
+                        </li>
+                        <li class="share-button">
+                            <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://reachmeout.me/"class="fb-xfbml-parse-ignore">
+                                <i class="share-button-facebook fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li class="share-button">
+                            <a target="_blank" href="https://twitter.com/intent/tweet?text=https://reachmeout.me/" data-size="large">
+                                <i class="share-button-twitter fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="share-button">
+						<div tabindex='0' onKeydown='skypeShareKeyDownHandler(event)' class='skype-share' data-href='https://reachmeout.me' data-lang='' data-text='' data-style='large' ></div><!--<i class="share-button-skype fab fa-skype"></i> -->
+                        </li>
+                        <li class="share-button">
+						<a target="_blank" href="http://pinterest.com/pin/create/link/?url=https://reachmeout.me" data-size="large">
+						
+                            <i class="share-button-pinterest fab fa-pinterest-p"></i>
+                        </li>
+                        <li class="share-button">
+						<a target="_blank" href="http://www.linkedin.com/shareArticle?mini=true&url=https://reachmeout.me" data-size="large">
+                            <i class="share-button-linkedin fab fa-linkedin-in"></i>
+                        </li>
+                        <li class="share-button">						
+						<a target="_blank" href="mailto:?subject=Reachmeout Digital Card&amp;body=Check out this digital card https://reachmeout.me">
+                            <i class="share-button-mail fas fa-envelope"></i>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+         <script src="js/rating.js"></script>
+        <script src="js/script.js"></script>
+		  <script type="text/javascript" src="js/jquery.js"></script>
+	 <script type="text/javascript" src="js/baguetteBox.min.js"></script>
+<script>
+    baguetteBox.run('.tz-gallery');
+</script>
+		 
+ <script type="text/javascript" src="js/jquery.validate.min.js"></script>
+    
+    <script type="text/javascript">
+		jQuery(document).ready(function() {
+			 jQuery("#contactform").validate({
+                rules: {
+                    name: "required",
+                    email: {
+                        required: true,
+                        email: true
+                    },
+                    phone: {
+                        required: true,
+						number: true,
+                        minlength: 5
+                    },
+					message: {
+                        required: true,
+                        minlength: 10
+                    },
+                    agree: "required"
+                },
+                messages: {
+                    name: "Please enter your name",
+					
+                    email: {
+						required: "Please enter your email",
+		                email: "Please enter valid email address.",
+						},
+                    
+					phone: {
+                        required: "Please enter your phone number",
+                        minlength: "Your phone number must be at least 5 numbers"
+                    },
+					
+					message: {
+                        required: "Please enter your message",
+                        minlength: "Your message must be at least 10 characters"
+                    },
+                    
+					agree: "Please accept our policy"
+                },
+               
+			   submitHandler: function(form) {
+                    //form.submit();
+					var url = "EmailForm.php";
+					var formData = jQuery('#contactform').serialize();
+					jQuery.ajax({
+					type: "POST",
+					url: url,
+					data: formData,
+					success:function(data)
+					{
+					if(data == 1)
+						{
+						
+						jQuery("#msg").show(1000);
+							jQuery("#contactform")[0].reset();
+						}  
+						else
+						{  
+						
+							jQuery("#msg").show(1000);
+							jQuery("#contactform")[0].reset();
+	 					}
+						setTimeout(function() {
+					jQuery("#msg").hide(1000);
+						}, 10000);
+					  
+					}
+					})
+                }
+            });
+			
+			
+			});
+			   
+</script>
+
+ <!--<script>
+	
+	function counter_fn(){
+    var counterElement = document.getElementById("CounterVisitor")
+    var counterNumber = parseInt(counterElement.innerHTML)
+    counterNumber = counterNumber + 1
+    counterElement.innerHTML = counterNumber
+  }
+  window.onload = counter_fn; 
+  
+  var counterNumber = 1
+
+if (localStorage.getItem("count")) {
+  counterNumber = parseInt(localStorage.getItem("count")) + 1
+}
+else {
+  localStorage.setItem("count", counterNumber)
+}
+			   
+</script> -->
+
+
+<script>
+const countEl = document.getElementById('CounterVisitor');
+
+updateVisitCount();
+
+function updateVisitCount() {
+	fetch('https://api.countapi.xyz/update/reachmeout.me-sathiyaseelan/seelan/?amount=1')
+	.then(res => res.json())
+	.then(res => {
+		countEl.innerHTML = res.value;
+	})
+}
+</script>
+<!--script>
+var n = localStorage.getItem('on_load_counter');
+
+if (n === null) {
+  n = 0;
+}
+n++;
+
+localStorage.setItem("on_load_counter", n);
+
+nums = n.toString().split('').map(Number);
+document.getElementById('CounterVisitor').innerHTML = '';
+for (var i of nums) {
+  document.getElementById('CounterVisitor').innerHTML += '<span class="counter-item">' + i + '</span>';
+}
+
+
+</script-->
+
+<script>
+// Place this code in the head section of your HTML file 
+(function(r, d, s) {
+	r.loadSkypeWebSdkAsync = r.loadSkypeWebSdkAsync || function(p) {
+		var js, sjs = d.getElementsByTagName(s)[0];
+		if (d.getElementById(p.id)) { return; }
+		js = d.createElement(s);
+		js.id = p.id;
+		js.src = p.scriptToLoad;
+		js.onload = p.callback
+		sjs.parentNode.insertBefore(js, sjs);
+	};
+	var p = {
+		scriptToLoad: 'https://swx.cdn.skype.com/shared/v/latest/skypewebsdk.js',
+		id: 'skype_web_sdk'
+	};
+	r.loadSkypeWebSdkAsync(p);
+})(window, document, 'script');
+</script>
+    </body>
+</html>
