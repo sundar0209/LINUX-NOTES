@@ -1,0 +1,27 @@
+:::: AWS Credentials ::::
+
+Login:	nidhhi@gmail.com
+Passwd:	AVBRl67#@
+
+=============================================
+Domain:	https://searchmycoach.co
+IP:	3.87.209.52
+ppk filename: smc.ppk
+=============================================
+	:::: Webmin Credentials:::
+
+https://searchmycoach.co:10000/
+
+Login:	developer
+Passwd: UQLsNfMhb8QYP
+Directory:	/var/www/sftp/smc-common/
+
+
+webmin used to Upload/Download files from server
+
+=============================================
+SMC default directory in server
+
+/var/www/html/SMC
+
+=============================================

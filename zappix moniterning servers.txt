@@ -1,0 +1,6 @@
+monitering
+http://zabbix.flashinfolabs.com/zabbix
+
+URL:	http://zabbix.flashinfolabs.com/zabbix
+U.name:	Admin
+Passwd:	zabbix
